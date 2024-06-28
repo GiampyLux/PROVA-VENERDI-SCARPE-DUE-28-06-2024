@@ -22,7 +22,7 @@ namespace ScarpeDue.Data
                  Id = 2,
                 Name = "Scarpe di Dragon Ball",
                 Price = 9000.99m,
-                Description = "Finalmente sono tornate le scarpe della lidl!",
+                Description = "Acquista subito queste scarpe in onore di toriyama",
                 CoverImageUrl = "/images/cover2.jpg",
                 AdditionalImage1Url = "/images/add1.jpg",
                 AdditionalImage2Url = "/images/add2.jpg"
