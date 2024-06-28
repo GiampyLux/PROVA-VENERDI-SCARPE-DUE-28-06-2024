@@ -26,6 +26,26 @@ namespace ScarpeDue.Data
                 CoverImageUrl = "/images/cover2.jpg",
                 AdditionalImage1Url = "/images/add1.jpg",
                 AdditionalImage2Url = "/images/add2.jpg"
+            },
+              new Product
+            {
+                 Id = 3,
+                Name = "Scarpe di Naruto ESCLUSIVA",
+                Price = 200000000.99m,
+                Description = "IO CREDO IN ME",
+                CoverImageUrl = "/images/covern.jpg",
+                AdditionalImage1Url = "/images/n1.jpg",
+                AdditionalImage2Url = "/images/n2.jpg"
+            },
+                new Product
+            {
+                 Id = 4,
+                Name = "Pippo l'informatico",
+                Price = 0.01m,
+                Description = "???",
+                CoverImageUrl = "/images/pippoCover.png",
+                AdditionalImage1Url = "/images/pippo.jpg",
+                AdditionalImage2Url = "/images/superman.png"
             }
         };
 
