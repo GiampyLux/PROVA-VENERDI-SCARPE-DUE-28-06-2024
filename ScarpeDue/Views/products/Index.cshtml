@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ScarpeDue.Models.Product>
+
+@{
+    ViewData["Title"] = "Prodotti in Vendita";
+}
+
+<h1>Prodotti in Vendita</h1>
+
+<div class="product-list">
+    @foreach (var product in Model)
+    {
+        <div class="product-item">
+            <img src="@product.CoverImageUrl" alt="@product.Name" class="product-cover" />
+            <h2>@product.Name</h2>
+            <p>@product.Price.ToString("C")</p>
+            <a href="@Url.Action("Details", "Products", new { id = product.Id })">Dettagli</a>
+        </div>
+    }
+</div>
+
+<style>
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .product-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .product-cover {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
